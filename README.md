@@ -89,19 +89,7 @@ This project demonstrates how organizations can:
 * Dashboard Development
 * Data Visualization
 * Analytics
-
----
-
-## 📷 Screenshots
-
-Add screenshots of:
-
-* Power BI Dashboard
-* Azure Data Factory Pipeline
-* PySpark Processing
-* SQL Queries
-* Project Architecture
-
+* 
 ---
 
 ## 🔮 Future Improvements
