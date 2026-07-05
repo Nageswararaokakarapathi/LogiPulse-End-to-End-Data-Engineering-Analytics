@@ -1,0 +1,1048 @@
+{
+  "generated_at": "2026-07-05 05:58:35",
+  "kpis": {
+    "total_shipments": 5000,
+    "otif_rate_pct": 81.2,
+    "total_freight_spend_usd": 24.25,
+    "avg_transit_days": 7.3,
+    "damage_rate_pct": 2.34,
+    "active_suppliers": 50,
+    "active_warehouses": 10
+  },
+  "carrier_scorecard": [
+    {
+      "carrier_id": "CAR-001",
+      "carrier_name": "FedEx Freight",
+      "transport_mode": "Road/Air",
+      "sla_target_pct": 96.5,
+      "total_shipments": 627,
+      "on_time_shipments": 522,
+      "in_full_shipments": 616,
+      "otif_shipments": 514,
+      "avg_transit_days": 3.4,
+      "avg_delay_days": 0.02,
+      "total_freight_spend_usd": 3565700.15,
+      "actual_on_time_pct": 83.25,
+      "actual_otif_pct": 81.98,
+      "sla_breach_flag": 1
+    },
+    {
+      "carrier_id": "CAR-002",
+      "carrier_name": "DHL Express",
+      "transport_mode": "Air/Sea",
+      "sla_target_pct": 98.0,
+      "total_shipments": 646,
+      "on_time_shipments": 538,
+      "in_full_shipments": 639,
+      "otif_shipments": 532,
+      "avg_transit_days": 3.48,
+      "avg_delay_days": -0.04,
+      "total_freight_spend_usd": 4728999.15,
+      "actual_on_time_pct": 83.28,
+      "actual_otif_pct": 82.35,
+      "sla_breach_flag": 1
+    },
+    {
+      "carrier_id": "CAR-003",
+      "carrier_name": "Maersk Line",
+      "transport_mode": "Sea",
+      "sla_target_pct": 92.0,
+      "total_shipments": 622,
+      "on_time_shipments": 523,
+      "in_full_shipments": 606,
+      "otif_shipments": 510,
+      "avg_transit_days": 23.67,
+      "avg_delay_days": -0.13,
+      "total_freight_spend_usd": 1330994.21,
+      "actual_on_time_pct": 84.08,
+      "actual_otif_pct": 81.99,
+      "sla_breach_flag": 1
+    },
+    {
+      "carrier_id": "CAR-004",
+      "carrier_name": "UPS Logistics",
+      "transport_mode": "Road/Air",
+      "sla_target_pct": 97.0,
+      "total_shipments": 599,
+      "on_time_shipments": 484,
+      "in_full_shipments": 579,
+      "otif_shipments": 467,
+      "avg_transit_days": 3.69,
+      "avg_delay_days": 0.07,
+      "total_freight_spend_usd": 3809435.61,
+      "actual_on_time_pct": 80.8,
+      "actual_otif_pct": 77.96,
+      "sla_breach_flag": 1
+    },
+    {
+      "carrier_id": "CAR-005",
+      "carrier_name": "XPO Logistics",
+      "transport_mode": "Road",
+      "sla_target_pct": 94.5,
+      "total_shipments": 636,
+      "on_time_shipments": 526,
+      "in_full_shipments": 625,
+      "otif_shipments": 517,
+      "avg_transit_days": 7.02,
+      "avg_delay_days": -0.01,
+      "total_freight_spend_usd": 2676149.25,
+      "actual_on_time_pct": 82.7,
+      "actual_otif_pct": 81.29,
+      "sla_breach_flag": 1
+    },
+    {
+      "carrier_id": "CAR-006",
+      "carrier_name": "DB Schenker",
+      "transport_mode": "Rail/Road",
+      "sla_target_pct": 93.5,
+      "total_shipments": 596,
+      "on_time_shipments": 497,
+      "in_full_shipments": 585,
+      "otif_shipments": 489,
+      "avg_transit_days": 7.09,
+      "avg_delay_days": -0.0,
+      "total_freight_spend_usd": 2119463.06,
+      "actual_on_time_pct": 83.39,
+      "actual_otif_pct": 82.05,
+      "sla_breach_flag": 1
+    },
+    {
+      "carrier_id": "CAR-007",
+      "carrier_name": "Kuehne + Nagel",
+      "transport_mode": "Sea/Air",
+      "sla_target_pct": 95.0,
+      "total_shipments": 644,
+      "on_time_shipments": 543,
+      "in_full_shipments": 622,
+      "otif_shipments": 524,
+      "avg_transit_days": 3.54,
+      "avg_delay_days": -0.05,
+      "total_freight_spend_usd": 3169068.44,
+      "actual_on_time_pct": 84.32,
+      "actual_otif_pct": 81.37,
+      "sla_breach_flag": 1
+    },
+    {
+      "carrier_id": "CAR-008",
+      "carrier_name": "C.H. Robinson",
+      "transport_mode": "Road",
+      "sla_target_pct": 94.0,
+      "total_shipments": 630,
+      "on_time_shipments": 522,
+      "in_full_shipments": 611,
+      "otif_shipments": 506,
+      "avg_transit_days": 6.87,
+      "avg_delay_days": -0.07,
+      "total_freight_spend_usd": 2855183.34,
+      "actual_on_time_pct": 82.86,
+      "actual_otif_pct": 80.32,
+      "sla_breach_flag": 1
+    }
+  ],
+  "warehouse_summary": [
+    {
+      "warehouse_id": "WH-CHI-02",
+      "name": "Chicago Midwest DC",
+      "region": "North America",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 63,
+      "total_inbound_weight_kg": 143713.34,
+      "monthly_freight_cost_usd": 336079.89,
+      "monthly_otif_pct": 87.3
+    },
+    {
+      "warehouse_id": "WH-CHI-02",
+      "name": "Chicago Midwest DC",
+      "region": "North America",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 77,
+      "total_inbound_weight_kg": 177244.92,
+      "monthly_freight_cost_usd": 371711.96,
+      "monthly_otif_pct": 77.92
+    },
+    {
+      "warehouse_id": "WH-CHI-02",
+      "name": "Chicago Midwest DC",
+      "region": "North America",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 83,
+      "total_inbound_weight_kg": 170343.31,
+      "monthly_freight_cost_usd": 375082.64,
+      "monthly_otif_pct": 81.93
+    },
+    {
+      "warehouse_id": "WH-CHI-02",
+      "name": "Chicago Midwest DC",
+      "region": "North America",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 83,
+      "total_inbound_weight_kg": 204336.48,
+      "monthly_freight_cost_usd": 432895.88,
+      "monthly_otif_pct": 83.13
+    },
+    {
+      "warehouse_id": "WH-CHI-02",
+      "name": "Chicago Midwest DC",
+      "region": "North America",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 84,
+      "total_inbound_weight_kg": 208095.86,
+      "monthly_freight_cost_usd": 460696.44,
+      "monthly_otif_pct": 83.33
+    },
+    {
+      "warehouse_id": "WH-CHI-02",
+      "name": "Chicago Midwest DC",
+      "region": "North America",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 100,
+      "total_inbound_weight_kg": 239671.09,
+      "monthly_freight_cost_usd": 494982.61,
+      "monthly_otif_pct": 78.0
+    },
+    {
+      "warehouse_id": "WH-CHI-02",
+      "name": "Chicago Midwest DC",
+      "region": "North America",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 26,
+      "total_inbound_weight_kg": 55907.44,
+      "monthly_freight_cost_usd": 89179.79,
+      "monthly_otif_pct": 73.08
+    },
+    {
+      "warehouse_id": "WH-DAL-03",
+      "name": "Dallas South DC",
+      "region": "North America",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 60,
+      "total_inbound_weight_kg": 137567.96,
+      "monthly_freight_cost_usd": 299043.89999999997,
+      "monthly_otif_pct": 86.67
+    },
+    {
+      "warehouse_id": "WH-DAL-03",
+      "name": "Dallas South DC",
+      "region": "North America",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 85,
+      "total_inbound_weight_kg": 202789.7,
+      "monthly_freight_cost_usd": 454369.39,
+      "monthly_otif_pct": 84.71
+    },
+    {
+      "warehouse_id": "WH-DAL-03",
+      "name": "Dallas South DC",
+      "region": "North America",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 81,
+      "total_inbound_weight_kg": 161934.38,
+      "monthly_freight_cost_usd": 339893.67,
+      "monthly_otif_pct": 79.01
+    },
+    {
+      "warehouse_id": "WH-DAL-03",
+      "name": "Dallas South DC",
+      "region": "North America",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 82,
+      "total_inbound_weight_kg": 188505.77,
+      "monthly_freight_cost_usd": 413347.68,
+      "monthly_otif_pct": 82.93
+    },
+    {
+      "warehouse_id": "WH-DAL-03",
+      "name": "Dallas South DC",
+      "region": "North America",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 83,
+      "total_inbound_weight_kg": 192830.6,
+      "monthly_freight_cost_usd": 392194.61,
+      "monthly_otif_pct": 79.52
+    },
+    {
+      "warehouse_id": "WH-DAL-03",
+      "name": "Dallas South DC",
+      "region": "North America",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 84,
+      "total_inbound_weight_kg": 203354.67,
+      "monthly_freight_cost_usd": 435505.76,
+      "monthly_otif_pct": 75.0
+    },
+    {
+      "warehouse_id": "WH-DAL-03",
+      "name": "Dallas South DC",
+      "region": "North America",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 29,
+      "total_inbound_weight_kg": 68238.33,
+      "monthly_freight_cost_usd": 109470.51,
+      "monthly_otif_pct": 65.52
+    },
+    {
+      "warehouse_id": "WH-DXB-10",
+      "name": "Dubai MEA Gateway",
+      "region": "MEA",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 61,
+      "total_inbound_weight_kg": 127795.57,
+      "monthly_freight_cost_usd": 287540.06,
+      "monthly_otif_pct": 80.33
+    },
+    {
+      "warehouse_id": "WH-DXB-10",
+      "name": "Dubai MEA Gateway",
+      "region": "MEA",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 91,
+      "total_inbound_weight_kg": 202302.02,
+      "monthly_freight_cost_usd": 427770.61,
+      "monthly_otif_pct": 82.42
+    },
+    {
+      "warehouse_id": "WH-DXB-10",
+      "name": "Dubai MEA Gateway",
+      "region": "MEA",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 82,
+      "total_inbound_weight_kg": 165308.65,
+      "monthly_freight_cost_usd": 351297.6,
+      "monthly_otif_pct": 81.71
+    },
+    {
+      "warehouse_id": "WH-DXB-10",
+      "name": "Dubai MEA Gateway",
+      "region": "MEA",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 82,
+      "total_inbound_weight_kg": 188589.96,
+      "monthly_freight_cost_usd": 386728.02,
+      "monthly_otif_pct": 74.39
+    },
+    {
+      "warehouse_id": "WH-DXB-10",
+      "name": "Dubai MEA Gateway",
+      "region": "MEA",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 88,
+      "total_inbound_weight_kg": 200555.03,
+      "monthly_freight_cost_usd": 465619.12,
+      "monthly_otif_pct": 76.14
+    },
+    {
+      "warehouse_id": "WH-DXB-10",
+      "name": "Dubai MEA Gateway",
+      "region": "MEA",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 88,
+      "total_inbound_weight_kg": 209859.37,
+      "monthly_freight_cost_usd": 407294.31,
+      "monthly_otif_pct": 75.0
+    },
+    {
+      "warehouse_id": "WH-DXB-10",
+      "name": "Dubai MEA Gateway",
+      "region": "MEA",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 20,
+      "total_inbound_weight_kg": 54369.56,
+      "monthly_freight_cost_usd": 88238.53,
+      "monthly_otif_pct": 65.0
+    },
+    {
+      "warehouse_id": "WH-FRA-05",
+      "name": "Frankfurt Central DC",
+      "region": "Europe",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 64,
+      "total_inbound_weight_kg": 161780.58,
+      "monthly_freight_cost_usd": 383767.96,
+      "monthly_otif_pct": 84.38
+    },
+    {
+      "warehouse_id": "WH-FRA-05",
+      "name": "Frankfurt Central DC",
+      "region": "Europe",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 61,
+      "total_inbound_weight_kg": 141685.58000000002,
+      "monthly_freight_cost_usd": 292716.96,
+      "monthly_otif_pct": 80.33
+    },
+    {
+      "warehouse_id": "WH-FRA-05",
+      "name": "Frankfurt Central DC",
+      "region": "Europe",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 107,
+      "total_inbound_weight_kg": 206308.62,
+      "monthly_freight_cost_usd": 439933.4,
+      "monthly_otif_pct": 82.24
+    },
+    {
+      "warehouse_id": "WH-FRA-05",
+      "name": "Frankfurt Central DC",
+      "region": "Europe",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 70,
+      "total_inbound_weight_kg": 164334.21,
+      "monthly_freight_cost_usd": 365899.32,
+      "monthly_otif_pct": 82.86
+    },
+    {
+      "warehouse_id": "WH-FRA-05",
+      "name": "Frankfurt Central DC",
+      "region": "Europe",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 68,
+      "total_inbound_weight_kg": 162485.05,
+      "monthly_freight_cost_usd": 353030.39,
+      "monthly_otif_pct": 86.76
+    },
+    {
+      "warehouse_id": "WH-FRA-05",
+      "name": "Frankfurt Central DC",
+      "region": "Europe",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 84,
+      "total_inbound_weight_kg": 170727.36000000002,
+      "monthly_freight_cost_usd": 377099.98,
+      "monthly_otif_pct": 84.52
+    },
+    {
+      "warehouse_id": "WH-FRA-05",
+      "name": "Frankfurt Central DC",
+      "region": "Europe",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 20,
+      "total_inbound_weight_kg": 45258.049999999996,
+      "monthly_freight_cost_usd": 62712.28,
+      "monthly_otif_pct": 75.0
+    },
+    {
+      "warehouse_id": "WH-LON-06",
+      "name": "London UK Gateway",
+      "region": "Europe",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 58,
+      "total_inbound_weight_kg": 128720.54,
+      "monthly_freight_cost_usd": 290173.86,
+      "monthly_otif_pct": 86.21
+    },
+    {
+      "warehouse_id": "WH-LON-06",
+      "name": "London UK Gateway",
+      "region": "Europe",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 73,
+      "total_inbound_weight_kg": 170200.96,
+      "monthly_freight_cost_usd": 355834.93,
+      "monthly_otif_pct": 79.45
+    },
+    {
+      "warehouse_id": "WH-LON-06",
+      "name": "London UK Gateway",
+      "region": "Europe",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 79,
+      "total_inbound_weight_kg": 183256.63,
+      "monthly_freight_cost_usd": 385573.16000000003,
+      "monthly_otif_pct": 84.81
+    },
+    {
+      "warehouse_id": "WH-LON-06",
+      "name": "London UK Gateway",
+      "region": "Europe",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 82,
+      "total_inbound_weight_kg": 182950.41,
+      "monthly_freight_cost_usd": 384411.41,
+      "monthly_otif_pct": 79.27
+    },
+    {
+      "warehouse_id": "WH-LON-06",
+      "name": "London UK Gateway",
+      "region": "Europe",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 75,
+      "total_inbound_weight_kg": 167844.61,
+      "monthly_freight_cost_usd": 365410.52,
+      "monthly_otif_pct": 77.33
+    },
+    {
+      "warehouse_id": "WH-LON-06",
+      "name": "London UK Gateway",
+      "region": "Europe",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 63,
+      "total_inbound_weight_kg": 150264.04,
+      "monthly_freight_cost_usd": 333442.58,
+      "monthly_otif_pct": 79.37
+    },
+    {
+      "warehouse_id": "WH-LON-06",
+      "name": "London UK Gateway",
+      "region": "Europe",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 18,
+      "total_inbound_weight_kg": 42013.69,
+      "monthly_freight_cost_usd": 79513.3,
+      "monthly_otif_pct": 77.78
+    },
+    {
+      "warehouse_id": "WH-ROT-04",
+      "name": "Rotterdam Euro Hub",
+      "region": "Europe",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 57,
+      "total_inbound_weight_kg": 124764.26,
+      "monthly_freight_cost_usd": 284044.71,
+      "monthly_otif_pct": 80.7
+    },
+    {
+      "warehouse_id": "WH-ROT-04",
+      "name": "Rotterdam Euro Hub",
+      "region": "Europe",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 86,
+      "total_inbound_weight_kg": 174490.99,
+      "monthly_freight_cost_usd": 380292.47,
+      "monthly_otif_pct": 79.07
+    },
+    {
+      "warehouse_id": "WH-ROT-04",
+      "name": "Rotterdam Euro Hub",
+      "region": "Europe",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 90,
+      "total_inbound_weight_kg": 191578.15,
+      "monthly_freight_cost_usd": 407807.08,
+      "monthly_otif_pct": 80.0
+    },
+    {
+      "warehouse_id": "WH-ROT-04",
+      "name": "Rotterdam Euro Hub",
+      "region": "Europe",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 89,
+      "total_inbound_weight_kg": 219699.62,
+      "monthly_freight_cost_usd": 467686.08,
+      "monthly_otif_pct": 77.53
+    },
+    {
+      "warehouse_id": "WH-ROT-04",
+      "name": "Rotterdam Euro Hub",
+      "region": "Europe",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 89,
+      "total_inbound_weight_kg": 205533.63999999998,
+      "monthly_freight_cost_usd": 412694.42,
+      "monthly_otif_pct": 79.78
+    },
+    {
+      "warehouse_id": "WH-ROT-04",
+      "name": "Rotterdam Euro Hub",
+      "region": "Europe",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 94,
+      "total_inbound_weight_kg": 228743.87,
+      "monthly_freight_cost_usd": 471404.92,
+      "monthly_otif_pct": 76.6
+    },
+    {
+      "warehouse_id": "WH-ROT-04",
+      "name": "Rotterdam Euro Hub",
+      "region": "Europe",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 20,
+      "total_inbound_weight_kg": 46404.6,
+      "monthly_freight_cost_usd": 86405.48,
+      "monthly_otif_pct": 70.0
+    },
+    {
+      "warehouse_id": "WH-SEA-01",
+      "name": "Seattle Global Hub",
+      "region": "North America",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 59,
+      "total_inbound_weight_kg": 132740.11,
+      "monthly_freight_cost_usd": 294241.18,
+      "monthly_otif_pct": 83.05
+    },
+    {
+      "warehouse_id": "WH-SEA-01",
+      "name": "Seattle Global Hub",
+      "region": "North America",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 75,
+      "total_inbound_weight_kg": 190840.46,
+      "monthly_freight_cost_usd": 415632.17,
+      "monthly_otif_pct": 76.0
+    },
+    {
+      "warehouse_id": "WH-SEA-01",
+      "name": "Seattle Global Hub",
+      "region": "North America",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 65,
+      "total_inbound_weight_kg": 135655.07,
+      "monthly_freight_cost_usd": 283146.54,
+      "monthly_otif_pct": 84.62
+    },
+    {
+      "warehouse_id": "WH-SEA-01",
+      "name": "Seattle Global Hub",
+      "region": "North America",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 83,
+      "total_inbound_weight_kg": 168228.62,
+      "monthly_freight_cost_usd": 327015.48,
+      "monthly_otif_pct": 81.93
+    },
+    {
+      "warehouse_id": "WH-SEA-01",
+      "name": "Seattle Global Hub",
+      "region": "North America",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 86,
+      "total_inbound_weight_kg": 182524.48,
+      "monthly_freight_cost_usd": 376493.78,
+      "monthly_otif_pct": 83.72
+    },
+    {
+      "warehouse_id": "WH-SEA-01",
+      "name": "Seattle Global Hub",
+      "region": "North America",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 92,
+      "total_inbound_weight_kg": 215398.03,
+      "monthly_freight_cost_usd": 467356.37,
+      "monthly_otif_pct": 79.35
+    },
+    {
+      "warehouse_id": "WH-SEA-01",
+      "name": "Seattle Global Hub",
+      "region": "North America",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 24,
+      "total_inbound_weight_kg": 50050.06,
+      "monthly_freight_cost_usd": 84584.24,
+      "monthly_otif_pct": 70.83
+    },
+    {
+      "warehouse_id": "WH-SIN-07",
+      "name": "Singapore APAC Hub",
+      "region": "APAC",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 78,
+      "total_inbound_weight_kg": 176358.2,
+      "monthly_freight_cost_usd": 404354.71,
+      "monthly_otif_pct": 89.74
+    },
+    {
+      "warehouse_id": "WH-SIN-07",
+      "name": "Singapore APAC Hub",
+      "region": "APAC",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 63,
+      "total_inbound_weight_kg": 116776.23,
+      "monthly_freight_cost_usd": 243829.1,
+      "monthly_otif_pct": 82.54
+    },
+    {
+      "warehouse_id": "WH-SIN-07",
+      "name": "Singapore APAC Hub",
+      "region": "APAC",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 100,
+      "total_inbound_weight_kg": 226054.42,
+      "monthly_freight_cost_usd": 476070.34,
+      "monthly_otif_pct": 90.0
+    },
+    {
+      "warehouse_id": "WH-SIN-07",
+      "name": "Singapore APAC Hub",
+      "region": "APAC",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 86,
+      "total_inbound_weight_kg": 195263.78,
+      "monthly_freight_cost_usd": 400773.83,
+      "monthly_otif_pct": 83.72
+    },
+    {
+      "warehouse_id": "WH-SIN-07",
+      "name": "Singapore APAC Hub",
+      "region": "APAC",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 101,
+      "total_inbound_weight_kg": 241851.32,
+      "monthly_freight_cost_usd": 527684.71,
+      "monthly_otif_pct": 80.2
+    },
+    {
+      "warehouse_id": "WH-SIN-07",
+      "name": "Singapore APAC Hub",
+      "region": "APAC",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 86,
+      "total_inbound_weight_kg": 208877.04,
+      "monthly_freight_cost_usd": 457711.45,
+      "monthly_otif_pct": 84.88
+    },
+    {
+      "warehouse_id": "WH-SIN-07",
+      "name": "Singapore APAC Hub",
+      "region": "APAC",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 19,
+      "total_inbound_weight_kg": 39854.78,
+      "monthly_freight_cost_usd": 73421.6,
+      "monthly_otif_pct": 73.68
+    },
+    {
+      "warehouse_id": "WH-SYD-09",
+      "name": "Sydney ANZ Hub",
+      "region": "APAC",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 63,
+      "total_inbound_weight_kg": 159480.36000000002,
+      "monthly_freight_cost_usd": 364296.44,
+      "monthly_otif_pct": 84.13
+    },
+    {
+      "warehouse_id": "WH-SYD-09",
+      "name": "Sydney ANZ Hub",
+      "region": "APAC",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 73,
+      "total_inbound_weight_kg": 176080.43,
+      "monthly_freight_cost_usd": 356482.07,
+      "monthly_otif_pct": 83.56
+    },
+    {
+      "warehouse_id": "WH-SYD-09",
+      "name": "Sydney ANZ Hub",
+      "region": "APAC",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 78,
+      "total_inbound_weight_kg": 180128.31,
+      "monthly_freight_cost_usd": 383303.93,
+      "monthly_otif_pct": 75.64
+    },
+    {
+      "warehouse_id": "WH-SYD-09",
+      "name": "Sydney ANZ Hub",
+      "region": "APAC",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 85,
+      "total_inbound_weight_kg": 189863.38,
+      "monthly_freight_cost_usd": 387462.57,
+      "monthly_otif_pct": 83.53
+    },
+    {
+      "warehouse_id": "WH-SYD-09",
+      "name": "Sydney ANZ Hub",
+      "region": "APAC",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 90,
+      "total_inbound_weight_kg": 198232.81,
+      "monthly_freight_cost_usd": 395063.76,
+      "monthly_otif_pct": 87.78
+    },
+    {
+      "warehouse_id": "WH-SYD-09",
+      "name": "Sydney ANZ Hub",
+      "region": "APAC",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 91,
+      "total_inbound_weight_kg": 230020.08,
+      "monthly_freight_cost_usd": 484142.06,
+      "monthly_otif_pct": 84.62
+    },
+    {
+      "warehouse_id": "WH-SYD-09",
+      "name": "Sydney ANZ Hub",
+      "region": "APAC",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 22,
+      "total_inbound_weight_kg": 64660.92,
+      "monthly_freight_cost_usd": 120702.46,
+      "monthly_otif_pct": 77.27
+    },
+    {
+      "warehouse_id": "WH-TYO-08",
+      "name": "Tokyo East DC",
+      "region": "APAC",
+      "delivery_month": "2026-01",
+      "monthly_inbound_shipments": 72,
+      "total_inbound_weight_kg": 172487.43,
+      "monthly_freight_cost_usd": 394033.4,
+      "monthly_otif_pct": 84.72
+    },
+    {
+      "warehouse_id": "WH-TYO-08",
+      "name": "Tokyo East DC",
+      "region": "APAC",
+      "delivery_month": "2026-02",
+      "monthly_inbound_shipments": 83,
+      "total_inbound_weight_kg": 195026.41,
+      "monthly_freight_cost_usd": 409185.32,
+      "monthly_otif_pct": 79.52
+    },
+    {
+      "warehouse_id": "WH-TYO-08",
+      "name": "Tokyo East DC",
+      "region": "APAC",
+      "delivery_month": "2026-03",
+      "monthly_inbound_shipments": 73,
+      "total_inbound_weight_kg": 177869.18,
+      "monthly_freight_cost_usd": 380966.33,
+      "monthly_otif_pct": 87.67
+    },
+    {
+      "warehouse_id": "WH-TYO-08",
+      "name": "Tokyo East DC",
+      "region": "APAC",
+      "delivery_month": "2026-04",
+      "monthly_inbound_shipments": 95,
+      "total_inbound_weight_kg": 207997.61,
+      "monthly_freight_cost_usd": 434098.44,
+      "monthly_otif_pct": 88.42
+    },
+    {
+      "warehouse_id": "WH-TYO-08",
+      "name": "Tokyo East DC",
+      "region": "APAC",
+      "delivery_month": "2026-05",
+      "monthly_inbound_shipments": 73,
+      "total_inbound_weight_kg": 172146.21,
+      "monthly_freight_cost_usd": 394148.19,
+      "monthly_otif_pct": 76.71
+    },
+    {
+      "warehouse_id": "WH-TYO-08",
+      "name": "Tokyo East DC",
+      "region": "APAC",
+      "delivery_month": "2026-06",
+      "monthly_inbound_shipments": 82,
+      "total_inbound_weight_kg": 187623.38,
+      "monthly_freight_cost_usd": 418994.63,
+      "monthly_otif_pct": 79.27
+    },
+    {
+      "warehouse_id": "WH-TYO-08",
+      "name": "Tokyo East DC",
+      "region": "APAC",
+      "delivery_month": "2026-07",
+      "monthly_inbound_shipments": 24,
+      "total_inbound_weight_kg": 60243.47,
+      "monthly_freight_cost_usd": 100999.92,
+      "monthly_otif_pct": 58.33
+    }
+  ],
+  "supplier_summary": [
+    {
+      "supplier_id": "SUP-001",
+      "supplier_name": "Taiwan Electronics Enterprises Ltd #1",
+      "category": "Electronics Components",
+      "country": "Taiwan",
+      "agreed_lead_days": 14,
+      "reliability_rating": 4.13,
+      "total_orders": 127,
+      "avg_actual_lead_days": 6.78,
+      "damage_rate_pct": 3.94,
+      "supplier_otif_pct": 80.31
+    },
+    {
+      "supplier_id": "SUP-041",
+      "supplier_name": "South Korea Raw Enterprises Ltd #41",
+      "category": "Raw Packaging",
+      "country": "South Korea",
+      "agreed_lead_days": 10,
+      "reliability_rating": 4.77,
+      "total_orders": 120,
+      "avg_actual_lead_days": 6.66,
+      "damage_rate_pct": 1.67,
+      "supplier_otif_pct": 85.83
+    },
+    {
+      "supplier_id": "SUP-030",
+      "supplier_name": "Vietnam Automotive Enterprises Ltd #30",
+      "category": "Automotive Parts",
+      "country": "Vietnam",
+      "agreed_lead_days": 3,
+      "reliability_rating": 3.93,
+      "total_orders": 118,
+      "avg_actual_lead_days": 6.92,
+      "damage_rate_pct": 4.24,
+      "supplier_otif_pct": 76.27
+    },
+    {
+      "supplier_id": "SUP-023",
+      "supplier_name": "Germany Chemical Enterprises Ltd #23",
+      "category": "Chemical Additives",
+      "country": "Germany",
+      "agreed_lead_days": 9,
+      "reliability_rating": 4.52,
+      "total_orders": 116,
+      "avg_actual_lead_days": 7.38,
+      "damage_rate_pct": 1.72,
+      "supplier_otif_pct": 80.17
+    },
+    {
+      "supplier_id": "SUP-006",
+      "supplier_name": "Germany Chemical Enterprises Ltd #6",
+      "category": "Chemical Additives",
+      "country": "Germany",
+      "agreed_lead_days": 9,
+      "reliability_rating": 4.21,
+      "total_orders": 116,
+      "avg_actual_lead_days": 7.44,
+      "damage_rate_pct": 4.31,
+      "supplier_otif_pct": 78.45
+    },
+    {
+      "supplier_id": "SUP-002",
+      "supplier_name": "Germany Chemical Enterprises Ltd #2",
+      "category": "Chemical Additives",
+      "country": "Germany",
+      "agreed_lead_days": 4,
+      "reliability_rating": 4.61,
+      "total_orders": 115,
+      "avg_actual_lead_days": 8.41,
+      "damage_rate_pct": 2.61,
+      "supplier_otif_pct": 83.48
+    },
+    {
+      "supplier_id": "SUP-026",
+      "supplier_name": "Taiwan Precision Enterprises Ltd #26",
+      "category": "Precision Hydraulics",
+      "country": "Taiwan",
+      "agreed_lead_days": 9,
+      "reliability_rating": 3.99,
+      "total_orders": 110,
+      "avg_actual_lead_days": 8.61,
+      "damage_rate_pct": 2.73,
+      "supplier_otif_pct": 81.82
+    },
+    {
+      "supplier_id": "SUP-028",
+      "supplier_name": "Mexico Chemical Enterprises Ltd #28",
+      "category": "Chemical Additives",
+      "country": "Mexico",
+      "agreed_lead_days": 11,
+      "reliability_rating": 4.53,
+      "total_orders": 109,
+      "avg_actual_lead_days": 6.74,
+      "damage_rate_pct": 0.92,
+      "supplier_otif_pct": 82.57
+    },
+    {
+      "supplier_id": "SUP-021",
+      "supplier_name": "India Industrial Enterprises Ltd #21",
+      "category": "Industrial Sensors",
+      "country": "India",
+      "agreed_lead_days": 9,
+      "reliability_rating": 4.23,
+      "total_orders": 109,
+      "avg_actual_lead_days": 7.61,
+      "damage_rate_pct": 2.75,
+      "supplier_otif_pct": 77.98
+    },
+    {
+      "supplier_id": "SUP-022",
+      "supplier_name": "South Korea Electronics Enterprises Ltd #22",
+      "category": "Electronics Components",
+      "country": "South Korea",
+      "agreed_lead_days": 3,
+      "reliability_rating": 4.83,
+      "total_orders": 108,
+      "avg_actual_lead_days": 7.08,
+      "damage_rate_pct": 0.0,
+      "supplier_otif_pct": 88.89
+    },
+    {
+      "supplier_id": "SUP-029",
+      "supplier_name": "Vietnam Raw Enterprises Ltd #29",
+      "category": "Raw Packaging",
+      "country": "Vietnam",
+      "agreed_lead_days": 11,
+      "reliability_rating": 4.94,
+      "total_orders": 107,
+      "avg_actual_lead_days": 7.41,
+      "damage_rate_pct": 0.0,
+      "supplier_otif_pct": 80.37
+    },
+    {
+      "supplier_id": "SUP-043",
+      "supplier_name": "India Automotive Enterprises Ltd #43",
+      "category": "Automotive Parts",
+      "country": "India",
+      "agreed_lead_days": 14,
+      "reliability_rating": 3.87,
+      "total_orders": 107,
+      "avg_actual_lead_days": 5.7,
+      "damage_rate_pct": 4.67,
+      "supplier_otif_pct": 78.5
+    },
+    {
+      "supplier_id": "SUP-033",
+      "supplier_name": "Germany Chemical Enterprises Ltd #33",
+      "category": "Chemical Additives",
+      "country": "Germany",
+      "agreed_lead_days": 10,
+      "reliability_rating": 4.94,
+      "total_orders": 106,
+      "avg_actual_lead_days": 7.81,
+      "damage_rate_pct": 3.77,
+      "supplier_otif_pct": 81.13
+    },
+    {
+      "supplier_id": "SUP-014",
+      "supplier_name": "Vietnam Precision Enterprises Ltd #14",
+      "category": "Precision Hydraulics",
+      "country": "Vietnam",
+      "agreed_lead_days": 6,
+      "reliability_rating": 4.6,
+      "total_orders": 105,
+      "avg_actual_lead_days": 7.08,
+      "damage_rate_pct": 6.67,
+      "supplier_otif_pct": 71.43
+    },
+    {
+      "supplier_id": "SUP-025",
+      "supplier_name": "Taiwan Chemical Enterprises Ltd #25",
+      "category": "Chemical Additives",
+      "country": "Taiwan",
+      "agreed_lead_days": 11,
+      "reliability_rating": 4.7,
+      "total_orders": 105,
+      "avg_actual_lead_days": 7.06,
+      "damage_rate_pct": 2.86,
+      "supplier_otif_pct": 84.76
+    }
+  ],
+  "delay_breakdown": [
+    {
+      "reason": "Carrier Breakdown",
+      "count": 196
+    },
+    {
+      "reason": "Customs Hold",
+      "count": 176
+    },
+    {
+      "reason": "Port Congestion",
+      "count": 162
+    },
+    {
+      "reason": "Documentation Error",
+      "count": 158
+    },
+    {
+      "reason": "Weather Disruption",
+      "count": 153
+    }
+  ]
+}

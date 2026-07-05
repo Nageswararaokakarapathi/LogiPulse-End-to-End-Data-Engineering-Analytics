@@ -1,0 +1,128 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "dataFactoryName": {
+      "type": "string",
+      "defaultValue": "adf-logipulse-prod"
+    },
+    "environment": {
+      "type": "string",
+      "defaultValue": "prod"
+    }
+  },
+  "resources": [
+    {
+      "name": "[concat(parameters('dataFactoryName'), '/Master_Logistics_BI_Pipeline')]",
+      "type": "Microsoft.DataFactory/factories/pipelines",
+      "apiVersion": "2018-06-01",
+      "properties": {
+        "description": "Master End-to-End Orchestration Pipeline for LogiPulse Supply Chain BI Platform",
+        "parameters": {
+          "BatchExecutionDate": {
+            "type": "String",
+            "defaultValue": "@formatDateTime(utcnow(), 'yyyy-MM-dd')"
+          }
+        },
+        "activities": [
+          {
+            "name": "Copy_ERP_To_ADLS_Bronze",
+            "description": "Copy raw ERP shipment & supplier feeds into ADLS Gen2 Bronze Container",
+            "type": "Copy",
+            "dependsOn": [],
+            "policy": {
+              "timeout": "0.12:00:00",
+              "retry": 3,
+              "retryIntervalInSeconds": 60,
+              "secureOutput": false,
+              "secureInput": false
+            },
+            "typeProperties": {
+              "source": {
+                "type": "RestSource",
+                "httpRequestTimeout": "00:05:00"
+              },
+              "sink": {
+                "type": "ParquetSink",
+                "storeSettings": {
+                  "type": "AzureBlobFSWriteSettings"
+                }
+              },
+              "enableStaging": false
+            }
+          },
+          {
+            "name": "Databricks_Lakehouse_ETL_Silver_Gold",
+            "description": "Execute PySpark Lakehouse Transformations (Bronze -> Silver -> Gold)",
+            "type": "DatabricksNotebook",
+            "dependsOn": [
+              {
+                "activity": "Copy_ERP_To_ADLS_Bronze",
+                "dependencyConditions": ["Succeeded"]
+              }
+            ],
+            "policy": {
+              "timeout": "0.04:00:00",
+              "retry": 2
+            },
+            "typeProperties": {
+              "notebookPath": "/Shared/LogiPulse/pyspark_lakehouse_pipeline",
+              "baseParameters": {
+                "execution_date": "@pipeline().parameters.BatchExecutionDate",
+                "environment": "@pipeline().parameters.environment"
+              }
+            }
+          },
+          {
+            "name": "SP_Load_Synapse_Star_Schema",
+            "description": "Invoke T-SQL Stored Procedure to MERGE Gold Data Lake tables into Azure Synapse Dedicated SQL Pool Star Schema",
+            "type": "SqlServerStoredProcedure",
+            "dependsOn": [
+              {
+                "activity": "Databricks_Lakehouse_ETL_Silver_Gold",
+                "dependencyConditions": ["Succeeded"]
+              }
+            ],
+            "typeProperties": {
+              "storedProcedureName": "[bi].[usp_LoadMasterStarSchema]",
+              "storedProcedureParameters": {
+                "BatchDate": {
+                  "value": "@pipeline().parameters.BatchExecutionDate",
+                  "type": "String"
+                }
+              }
+            }
+          },
+          {
+            "name": "Alert_ETL_Failure_Notification",
+            "description": "Trigger Teams/Email notification via Logic App Webhook if any ETL step fails",
+            "type": "WebHook",
+            "dependsOn": [
+              {
+                "activity": "Copy_ERP_To_ADLS_Bronze",
+                "dependencyConditions": ["Failed"]
+              },
+              {
+                "activity": "Databricks_Lakehouse_ETL_Silver_Gold",
+                "dependencyConditions": ["Failed"]
+              },
+              {
+                "activity": "SP_Load_Synapse_Star_Schema",
+                "dependencyConditions": ["Failed"]
+              }
+            ],
+            "typeProperties": {
+              "url": "https://prod-api.logic.azure.com:443/workflows/logipulse-alert-webhook",
+              "method": "POST",
+              "body": {
+                "PipelineName": "@pipeline().Pipeline",
+                "RunId": "@pipeline().RunId",
+                "ErrorMessage": "LogiPulse ETL Master Pipeline encountered a failure. Please review ADF Monitor."
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

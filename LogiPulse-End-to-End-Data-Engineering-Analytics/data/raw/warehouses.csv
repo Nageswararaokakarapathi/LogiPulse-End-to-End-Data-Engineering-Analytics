@@ -1,0 +1,11 @@
+warehouse_id,name,city,country,region,capacity_sqft,daily_op_cost_usd
+WH-SEA-01,Seattle Global Hub,Seattle,USA,North America,500000,12500
+WH-CHI-02,Chicago Midwest DC,Chicago,USA,North America,420000,10800
+WH-DAL-03,Dallas South DC,Dallas,USA,North America,380000,9200
+WH-ROT-04,Rotterdam Euro Hub,Rotterdam,Netherlands,Europe,600000,15400
+WH-FRA-05,Frankfurt Central DC,Frankfurt,Germany,Europe,450000,13200
+WH-LON-06,London UK Gateway,London,UK,Europe,350000,14000
+WH-SIN-07,Singapore APAC Hub,Singapore,Singapore,APAC,550000,16000
+WH-TYO-08,Tokyo East DC,Tokyo,Japan,APAC,400000,14500
+WH-SYD-09,Sydney ANZ Hub,Sydney,Australia,APAC,300000,11000
+WH-DXB-10,Dubai MEA Gateway,Dubai,UAE,MEA,480000,11800

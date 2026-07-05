@@ -1,0 +1,51 @@
+supplier_id,supplier_name,category,country,agreed_lead_days,reliability_rating,total_orders,avg_actual_lead_days,damage_rate_pct,supplier_otif_pct
+SUP-001,Taiwan Electronics Enterprises Ltd #1,Electronics Components,Taiwan,14,4.13,127,6.78,3.94,80.31
+SUP-002,Germany Chemical Enterprises Ltd #2,Chemical Additives,Germany,4,4.61,115,8.41,2.61,83.48
+SUP-003,India Electronics Enterprises Ltd #3,Electronics Components,India,3,3.91,90,8.02,2.22,80.0
+SUP-004,China Industrial Enterprises Ltd #4,Industrial Sensors,China,6,4.66,89,6.79,0.0,86.52
+SUP-005,USA Automotive Enterprises Ltd #5,Automotive Parts,USA,12,4.13,89,8.08,2.25,80.9
+SUP-006,Germany Chemical Enterprises Ltd #6,Chemical Additives,Germany,9,4.21,116,7.44,4.31,78.45
+SUP-007,USA Precision Enterprises Ltd #7,Precision Hydraulics,USA,4,3.91,103,8.45,4.85,82.52
+SUP-008,Vietnam Precision Enterprises Ltd #8,Precision Hydraulics,Vietnam,12,4.12,94,7.41,0.0,87.23
+SUP-009,South Korea Industrial Enterprises Ltd #9,Industrial Sensors,South Korea,4,4.97,100,7.88,3.0,77.0
+SUP-010,Taiwan Industrial Enterprises Ltd #10,Industrial Sensors,Taiwan,7,4.8,102,7.32,0.0,80.39
+SUP-011,USA Chemical Enterprises Ltd #11,Chemical Additives,USA,4,3.85,96,8.6,3.12,81.25
+SUP-012,Mexico Electronics Enterprises Ltd #12,Electronics Components,Mexico,6,4.84,100,7.8,4.0,78.0
+SUP-013,Mexico Automotive Enterprises Ltd #13,Automotive Parts,Mexico,13,4.8,103,8.33,1.94,74.76
+SUP-014,Vietnam Precision Enterprises Ltd #14,Precision Hydraulics,Vietnam,6,4.6,105,7.08,6.67,71.43
+SUP-015,Germany Industrial Enterprises Ltd #15,Industrial Sensors,Germany,14,4.09,92,7.75,2.17,78.26
+SUP-016,India Precision Enterprises Ltd #16,Precision Hydraulics,India,13,4.63,103,7.36,0.0,83.5
+SUP-017,Vietnam Electronics Enterprises Ltd #17,Electronics Components,Vietnam,6,4.79,83,7.83,1.2,77.11
+SUP-018,India Precision Enterprises Ltd #18,Precision Hydraulics,India,4,4.05,96,6.57,2.08,83.33
+SUP-019,USA Chemical Enterprises Ltd #19,Chemical Additives,USA,10,4.27,98,7.69,3.06,82.65
+SUP-020,Germany Precision Enterprises Ltd #20,Precision Hydraulics,Germany,5,4.1,101,6.83,0.99,83.17
+SUP-021,India Industrial Enterprises Ltd #21,Industrial Sensors,India,9,4.23,109,7.61,2.75,77.98
+SUP-022,South Korea Electronics Enterprises Ltd #22,Electronics Components,South Korea,3,4.83,108,7.08,0.0,88.89
+SUP-023,Germany Chemical Enterprises Ltd #23,Chemical Additives,Germany,9,4.52,116,7.38,1.72,80.17
+SUP-024,India Industrial Enterprises Ltd #24,Industrial Sensors,India,10,4.43,94,7.35,0.0,94.68
+SUP-025,Taiwan Chemical Enterprises Ltd #25,Chemical Additives,Taiwan,11,4.7,105,7.06,2.86,84.76
+SUP-026,Taiwan Precision Enterprises Ltd #26,Precision Hydraulics,Taiwan,9,3.99,110,8.61,2.73,81.82
+SUP-027,Mexico Industrial Enterprises Ltd #27,Industrial Sensors,Mexico,5,4.41,102,7.95,3.92,77.45
+SUP-028,Mexico Chemical Enterprises Ltd #28,Chemical Additives,Mexico,11,4.53,109,6.74,0.92,82.57
+SUP-029,Vietnam Raw Enterprises Ltd #29,Raw Packaging,Vietnam,11,4.94,107,7.41,0.0,80.37
+SUP-030,Vietnam Automotive Enterprises Ltd #30,Automotive Parts,Vietnam,3,3.93,118,6.92,4.24,76.27
+SUP-031,Mexico Raw Enterprises Ltd #31,Raw Packaging,Mexico,3,4.09,95,8.01,1.05,81.05
+SUP-032,Taiwan Chemical Enterprises Ltd #32,Chemical Additives,Taiwan,10,4.78,92,6.49,0.0,80.43
+SUP-033,Germany Chemical Enterprises Ltd #33,Chemical Additives,Germany,10,4.94,106,7.81,3.77,81.13
+SUP-034,Mexico Industrial Enterprises Ltd #34,Industrial Sensors,Mexico,12,4.31,105,7.26,3.81,80.95
+SUP-035,USA Chemical Enterprises Ltd #35,Chemical Additives,USA,7,4.28,104,6.02,3.85,81.73
+SUP-036,South Korea Industrial Enterprises Ltd #36,Industrial Sensors,South Korea,10,3.95,96,6.22,4.17,76.04
+SUP-037,Taiwan Precision Enterprises Ltd #37,Precision Hydraulics,Taiwan,3,4.51,99,7.27,2.02,81.82
+SUP-038,USA Electronics Enterprises Ltd #38,Electronics Components,USA,4,4.65,91,7.18,1.1,83.52
+SUP-039,USA Electronics Enterprises Ltd #39,Electronics Components,USA,3,4.83,93,6.91,1.08,81.72
+SUP-040,USA Precision Enterprises Ltd #40,Precision Hydraulics,USA,13,4.38,90,7.39,1.11,78.89
+SUP-041,South Korea Raw Enterprises Ltd #41,Raw Packaging,South Korea,10,4.77,120,6.66,1.67,85.83
+SUP-042,Taiwan Electronics Enterprises Ltd #42,Electronics Components,Taiwan,13,4.32,100,5.82,2.0,94.0
+SUP-043,India Automotive Enterprises Ltd #43,Automotive Parts,India,14,3.87,107,5.7,4.67,78.5
+SUP-044,China Automotive Enterprises Ltd #44,Automotive Parts,China,14,4.21,90,7.01,2.22,78.89
+SUP-045,USA Raw Enterprises Ltd #45,Raw Packaging,USA,6,4.44,81,6.67,3.7,83.95
+SUP-046,India Raw Enterprises Ltd #46,Raw Packaging,India,7,4.36,101,8.6,0.99,76.24
+SUP-047,South Korea Industrial Enterprises Ltd #47,Industrial Sensors,South Korea,4,3.86,89,7.46,0.0,84.27
+SUP-048,Taiwan Raw Enterprises Ltd #48,Raw Packaging,Taiwan,5,4.29,98,7.32,3.06,78.57
+SUP-049,USA Automotive Enterprises Ltd #49,Automotive Parts,USA,3,4.0,84,6.61,1.19,76.19
+SUP-050,India Precision Enterprises Ltd #50,Precision Hydraulics,India,10,4.14,79,7.25,6.33,81.01

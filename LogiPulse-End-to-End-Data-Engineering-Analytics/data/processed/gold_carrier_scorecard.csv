@@ -1,0 +1,9 @@
+carrier_id,carrier_name,transport_mode,sla_target_pct,total_shipments,on_time_shipments,in_full_shipments,otif_shipments,avg_transit_days,avg_delay_days,total_freight_spend_usd,actual_on_time_pct,actual_otif_pct,sla_breach_flag
+CAR-001,FedEx Freight,Road/Air,96.5,627,522,616,514,3.4,0.02,3565700.15,83.25,81.98,1
+CAR-002,DHL Express,Air/Sea,98.0,646,538,639,532,3.48,-0.04,4728999.15,83.28,82.35,1
+CAR-003,Maersk Line,Sea,92.0,622,523,606,510,23.67,-0.13,1330994.21,84.08,81.99,1
+CAR-004,UPS Logistics,Road/Air,97.0,599,484,579,467,3.69,0.07,3809435.61,80.8,77.96,1
+CAR-005,XPO Logistics,Road,94.5,636,526,625,517,7.02,-0.01,2676149.25,82.7,81.29,1
+CAR-006,DB Schenker,Rail/Road,93.5,596,497,585,489,7.09,-0.0,2119463.06,83.39,82.05,1
+CAR-007,Kuehne + Nagel,Sea/Air,95.0,644,543,622,524,3.54,-0.05,3169068.44,84.32,81.37,1
+CAR-008,C.H. Robinson,Road,94.0,630,522,611,506,6.87,-0.07,2855183.34,82.86,80.32,1

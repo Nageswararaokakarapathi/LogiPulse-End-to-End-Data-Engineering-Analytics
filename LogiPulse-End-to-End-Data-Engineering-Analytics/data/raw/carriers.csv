@@ -1,0 +1,9 @@
+carrier_id,carrier_name,transport_mode,base_rate_per_kg,sla_target_pct
+CAR-001,FedEx Freight,Road/Air,2.45,96.5
+CAR-002,DHL Express,Air/Sea,3.1,98.0
+CAR-003,Maersk Line,Sea,0.85,92.0
+CAR-004,UPS Logistics,Road/Air,2.6,97.0
+CAR-005,XPO Logistics,Road,1.75,94.5
+CAR-006,DB Schenker,Rail/Road,1.5,93.5
+CAR-007,Kuehne + Nagel,Sea/Air,2.1,95.0
+CAR-008,C.H. Robinson,Road,1.85,94.0

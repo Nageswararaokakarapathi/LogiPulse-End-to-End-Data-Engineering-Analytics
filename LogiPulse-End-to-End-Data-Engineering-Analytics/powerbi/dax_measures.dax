@@ -1,0 +1,118 @@
+// ============================================================================
+// LogiPulse Global - Power BI Semantic Model DAX Measures Table
+// Organized by Business Subject Area
+// ============================================================================
+
+// ----------------------------------------------------------------------------
+// 1. SHIPMENT & FULFILLMENT KPIS
+// ----------------------------------------------------------------------------
+
+[Total Shipments] = 
+COUNTROWS( 'fact_shipment_fulfillment' )
+
+[Total Freight Spend (USD)] = 
+SUM( 'fact_shipment_fulfillment'[freight_cost_usd] )
+
+[Total Weight Transported (KG)] = 
+SUM( 'fact_shipment_fulfillment'[weight_kg] )
+
+[Avg Freight Cost per KG] = 
+DIVIDE(
+    [Total Freight Spend (USD)],
+    [Total Weight Transported (KG)],
+    0
+)
+
+[Avg Transit Days] = 
+AVERAGE( 'fact_shipment_fulfillment'[transit_days] )
+
+[Avg Transit Delay Days] = 
+AVERAGE( 'fact_shipment_fulfillment'[transit_delay_days] )
+
+
+// ----------------------------------------------------------------------------
+// 2. ON-TIME IN-FULL (OTIF) & QUALITY METRICS
+// ----------------------------------------------------------------------------
+
+[On-Time Shipments] = 
+CALCULATE(
+    [Total Shipments],
+    'fact_shipment_fulfillment'[on_time_flag] = 1
+)
+
+[In-Full Shipments] = 
+CALCULATE(
+    [Total Shipments],
+    'fact_shipment_fulfillment'[in_full_flag] = 1
+)
+
+[OTIF Shipments] = 
+CALCULATE(
+    [Total Shipments],
+    'fact_shipment_fulfillment'[otif_compliance_flag] = 1
+)
+
+[On-Time Rate %] = 
+DIVIDE(
+    [On-Time Shipments],
+    [Total Shipments],
+    0
+)
+
+[OTIF Rate %] = 
+DIVIDE(
+    [OTIF Shipments],
+    [Total Shipments],
+    0
+)
+
+[Damage Rate %] = 
+DIVIDE(
+    CALCULATE([Total Shipments], 'fact_shipment_fulfillment'[damage_reported_flag] = 1),
+    [Total Shipments],
+    0
+)
+
+
+// ----------------------------------------------------------------------------
+// 3. SERVICE LEVEL AGREEMENT (SLA) & VARIANCE ANALYSIS
+// ----------------------------------------------------------------------------
+
+[Target SLA %] = 
+AVERAGE( 'dim_carrier'[sla_target_pct] ) / 100.0
+
+[SLA Variance %] = 
+[On-Time Rate %] - [Target SLA %]
+
+[SLA Breach Status] = 
+IF(
+    [On-Time Rate %] < [Target SLA %],
+    "🚨 SLA Breached",
+    "✅ SLA Compliant"
+)
+
+[Freight Spend YoY Growth %] = 
+VAR CurrentSpend = [Total Freight Spend (USD)]
+VAR PriorYearSpend = CALCULATE([Total Freight Spend (USD)], SAMEPERIODLASTYEAR('dim_date'[full_date]))
+RETURN
+DIVIDE(CurrentSpend - PriorYearSpend, PriorYearSpend, BLANK())
+
+
+// ----------------------------------------------------------------------------
+// 4. TELEMATICS & FLEET EFFICIENCY
+// ----------------------------------------------------------------------------
+
+[Avg Vehicle Speed (KM/H)] = 
+AVERAGE( 'fact_fleet_telematics'[speed_kmh] )
+
+[Avg Fuel Consumption (L/100km)] = 
+CALCULATE(
+    AVERAGE( 'fact_fleet_telematics'[fuel_consumption_l_100km] ),
+    'fact_fleet_telematics'[speed_kmh] > 5
+)
+
+[Active Maintenance Alerts] = 
+CALCULATE(
+    COUNTROWS( 'fact_fleet_telematics' ),
+    'fact_fleet_telematics'[maintenance_alert_flag] = 1
+)
